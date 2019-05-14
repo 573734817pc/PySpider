@@ -11,6 +11,7 @@ class ParamConf(Base.Base):
         #中间项为爬取url的匹配规则
         #最后一项是爬取最终页的匹配规则，这里写的匹配规则就是我们最后要得到的数据
         #如果匹配的时候出错，请一定检查自己写的匹配规则！！！
+        #下面的这个匹配是一个demo
         self.conf_param = [
             ['http://www.stdaily.com/qykj/index.shtml', '<div class="moretit"><h3>.*?<a href="(.*?)".*?</a>'],
             ['', '<div class="f_lieb_list">.*?<li>.*?<h3>.*?<a href="(.*?)".*?</a>'],
