@@ -11,15 +11,18 @@ class ParamConf(Base.Base):
         # #中间项为爬取url的匹配规则
         # #最后一项是爬取最终页的匹配规则，这里写的匹配规则就是我们最后要得到的数据
         # #如果匹配的时候出错，请一定检查自己写的匹配规则！！！
-        # #下面的这个匹配是一个demo
+
+        # #demo1
+        # #下面的这个匹配是一个demo:http://www.stdaily.com/qykj/index.shtml
         # self.conf_param = [
         #     ['http://www.stdaily.com/qykj/index.shtml', '<div class="moretit"><h3>.*?<a href="(.*?)".*?</a>'],
         #     ['', '<div class="f_lieb_list">.*?<li>.*?<h3>.*?<a href="(.*?)".*?</a>'],
         #     ['', '<h1 class="ctitle">(.*?)</h1>.*?<div class="time">(.*?)<span']
         # ]
 
-        #https://new.qq.com
-        self.domain_name = "https://new.qq.com"
+        #demo2
+        #https://news.baidu.com/finance
+        self.domain_name = "https://news.baidu.com"
         self.conf_param = [
             ['https://news.baidu.com/finance', '<li class="bold-item">.*?<a href="(.*?)".*?</li>'],
             ['', '<h3>.*?<a class="upgrade".*?href="(.*?)".*?</h3>'],
