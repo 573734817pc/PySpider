@@ -9,6 +9,9 @@ class ParseOnePage(GetOnePage.GetOnePage):
     # return:items(tuple)
     def parse_one_page(self, html, key1=0, key2=1):
         pattern = re.compile(self.conf_param[key1][key2], re.S)
-        items = re.findall(pattern, html)
+        if html == "":
+            items = []
+        else:
+            items = re.findall(pattern, html)
         return items
 
